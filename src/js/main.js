@@ -1,10 +1,10 @@
-/*
-    It is responsible for starting the application and listening to general application events.
-*/
-
 import { createNoteElement } from "./createNoteElement.js";
 import { notes, isEditing, existNotes } from "./notes.js";
 import { searchNotes } from "./searchNotes.js";
+
+/*
+    It is responsible for starting the application and listening to general application events.
+*/
 
 const notesList = document.getElementById("notes-list");
 const inputSearch = document.getElementById("search-input");

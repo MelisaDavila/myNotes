@@ -1,9 +1,9 @@
+import { getNotesFromLocalStorage, setNotesToLocalStorage, getCounterFromLocalStorage, setCounterToLocalStorage } from "./localstorage.js";
+import { createNoteElement } from "./createNoteElement.js";
+
 /*
 It contains functionalities to know and manage the status of the notes and the actions that can be performed with them, such as create, update and edit a note.
 */
-
-import { getNotesFromLocalStorage, setNotesToLocalStorage, getCounterFromLocalStorage, setCounterToLocalStorage } from "./localstorage.js";
-import { createNoteElement } from "./createNoteElement.js";
 
 const titleInput = document.getElementById("title-note");
 const contentTextarea = document.getElementById("content-note");
@@ -108,7 +108,7 @@ export function handleEditNote(id) {
 function renderEditElement(element, note) {
     element.innerHTML = `
           <input class="create-notes__input" type="text" placeholder="Título" value="${note.title}">
-          <textarea class="create-notes__textarea" placeholder="Contenido">${note.content}</textarea>
+          <textarea class="create-notes__textarea" placeholder="Contenido">${note.content.replace(/<br>/g, '\n')}</textarea>
           <button class="btn-secondary" type="button">Guardar cambios</button>
       `;
 }

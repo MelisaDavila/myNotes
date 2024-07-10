@@ -1,8 +1,8 @@
+import { handleEditNote, handleDeleteNote } from "./notes.js";
+
 /*
   Create an html element with the components of a saved note
  */
-
-import { handleEditNote, handleDeleteNote } from "./notes.js";
 
 export function createNoteElement(note) {
   const noteElement = document.createElement("div");

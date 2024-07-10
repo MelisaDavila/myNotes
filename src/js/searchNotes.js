@@ -1,9 +1,10 @@
+import { notes } from './notes.js';
+import { createNoteElement } from './createNoteElement.js';
+
 /*
 Filter notes based on search content, and render corresponding notes
 */
 
-import { notes } from './notes.js';
-import { createNoteElement } from './createNoteElement.js';
 const notesList = document.getElementById("notes-list");
 
 export function searchNotes(searchTerm) {
