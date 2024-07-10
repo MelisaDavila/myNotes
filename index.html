@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mis Notas</title>
+    <meta name="author" content="melisadavila2001@gmail.com" />
+    <meta
+      name="description"
+      content="Aplicación web para creación y manejo de notas en línea"
+    />
+    <meta name="keywords" content="notas, crear notas" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/icon-notes-claro.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="sub-container">
+        <header class="header__container">
+          <img class="header__logo" src="/icon-notes-oscuro.svg" alt="ICON" />
+          <h1 class="header__title">Mis Notas</h1>
+        </header>
+        <main>
+          <section id="search-bar" class="search__container">
+            <input
+              type="text"
+              id="search-input"
+              class="search__input"
+              placeholder="Buscar notas"
+            />
+            <img class="search__icon" src="/icon-search.svg" alt="Buscar" />
+          </section>
+          <section id="create-notes-container" class="create-notes__container">
+            <form id="notes-form" class="create-notes__form">
+              <div class="create-notes__inputs">
+                <input
+                  type="text"
+                  id="title-note"
+                  name="title-note"
+                  class="create-notes__input"
+                  placeholder="Titulo"
+                  maxlength="40"
+                />
+                <textarea
+                  id="content-note"
+                  name="content-note"
+                  class="create-notes__textarea"
+                  placeholder="Contenido"
+                  maxlength="900"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn-primary" id="btnCreateNote" type="submit">
+                Crear
+              </button>
+            </form>
+          </section>
+          <section class="notes__container">
+            <div id="notes-list" class="notes__list"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>
