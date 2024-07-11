@@ -1,0 +1,51 @@
+# Aplicacion de Notas en linea
+
+## Instalación
+
+Para instalar las dependencias necesarias, primero corre:
+
+```bash
+npm install
+```
+
+## Desarrollo
+
+Una vez instaladas las dependencias, puedes correr el servidor de desarrollo con el siguiente comando:
+
+```bash
+npm run dev
+```
+
+## Estructura del Proyecto
+
+- El proyecto utiliza Vite como herramienta de construcción y desarrollo.
+- En la raíz del proyecto, se encuentra el archivo index.html, que sirve como el punto de entrada principal para la aplicación.
+- Dentro de la carpeta src, la cual contiene todo el código fuente de la aplicación, hay dos subcarpetas principales: js y styles.
+- La carpeta js contiene:
+  - **main.js** : inicializacion de la aplicacion y eventos generales
+  - **notes.js** : Contiene funcionalidades para gestionar el estado de los notas y realizar operaciones CRUD.
+  - **localStorage.js** : Manejo del estado de las notas en el localStorage
+  - **createHtmlElements.js** : Crea diferentes componentes html listos para insertar en el DOM.
+  - **utilities.js** : Funcionalidades complementarias para el funcionamiento de la aplicacion.
+
+## Uso de Local Storage
+
+Este proyecto utiliza el Local Storage del navegador para almacenar datos de manera persistente en el cliente, permitiendo una experiencia de usuario más fluida y eficiente.
+
+El proyecto está empaquetado con Vite y tiene la siguiente estructura:
+
+## Enlace de la Publicación
+
+Puedes ver la aplicación publicada en Cloudflare, visita el siguiente enlace: https://mynotes-7k6.pages.dev/
+
+## Contribuciones
+
+Si deseas contribuir al proyecto, por favor sigue estos pasos para enviar un Pull Request (PR):
+
+1. **Fork** este repositorio.
+2. Crea una nueva rama con un nombre descriptivo de tu feature o cambio.
+3. Realiza tus cambios en esa rama.
+4. Asegúrate de que tu código sigue los estándares del proyecto.
+5. Realiza un commit de tus cambios.
+6. Sube tu rama al repositorio forked.
+7. Abre un Pull Request en el repositorio original y proporciona una descripción detallada de tus cambios.
