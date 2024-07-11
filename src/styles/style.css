@@ -55,7 +55,7 @@ body {
 }
 
 .btn-secondary:hover {
-  background-color: var();
+  background-color: #bbbaba;
 }
 
 /* ----------- SEARCH BAR -----------*/
@@ -110,14 +110,14 @@ body {
 .create-notes__container {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
+  max-width: 375px;
 }
 
 .create-notes__form {
   display: flex;
   flex-direction: column;
-  width: 350px;
-  max-width: 350px;
+  width: 375px;
+  max-width: 375px;
 }
 
 .create-notes__inputs {
